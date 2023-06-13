@@ -1,4 +1,5 @@
 import plotly.express as px
+import plotly.graph_objects as go
 
 
 def main():
@@ -57,6 +58,26 @@ def main():
         elif option == '2':
             fig = px.scatter_polar(r=prime_nums, theta=prime_nums, start_angle=0, direction="counterclockwise")
             fig.show()
+
+            # values_x = []
+            # values_y = []
+            # for i in prime_nums:
+            #     for j in prime_nums:
+            #         values_x.append(i)
+            #         values_y.append(j)
+            #
+            # fig = go.Figure()
+            # fig.add_trace(
+            #     go.Scatter(
+            #         mode="markers",
+            #         x=values_x,
+            #         y=values_y,
+            #         marker=dict(
+            #             size=1
+            #         )
+            #     )
+            # )
+            # fig.show()
 
 
 if __name__ == "__main__":
