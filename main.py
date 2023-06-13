@@ -1,9 +1,4 @@
 import plotly.express as px
-import numpy as np
-
-
-def is_prime(number: int):
-    pass
 
 
 def main():
